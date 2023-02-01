@@ -1,0 +1,83 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": [
+    "react-app",
+    "react-app/jest",
+    "airbnb-base",
+    "airbnb-typescript",
+    "plugin:import/typescript",
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "overrides": [],
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "prettier"
+  ],
+  "rules": {
+    "no-console": "warn",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "quotes": [
+      "error",
+      "double",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "@typescript-eslint/quotes": [
+      "error",
+      "double",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "react/jsx-uses-react": [
+      "off"
+    ],
+    "react/react-in-jsx-scope": [
+      "off"
+    ],
+    "react/jsx-props-no-spreading": [
+      "warn"
+    ],
+    "no-shadow": "off",
+    "brace-style": [
+      "off",
+      "1tbs",
+      {
+        "allowSingleLine": true
+      }
+    ],
+    "no-mixed-spaces-and-tabs": [
+      "off",
+      "smart-tabs"
+    ],
+    "no-tabs": [
+      "off",
+      {
+        "allowIndentationTabs": true
+      }
+    ]
+  }
+}
